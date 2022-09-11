@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project - Tic-Tac-Toe</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+ 
+    
+</head>
+  
+<body>  
+    <!----Problem Statement-->
+      <div class="split left">
+            
+        <h1>Problem Statement</h1>
+        <br>
+        <span> Build a TIC TAC TOE Game. using HTML CSS and Javascript.</span>
+        <br>
+        <h2>Assumption:</h2>
+        <br> 
+        <ol>      
+        <li>How many players Involved?</li>
+        <li>What symbol should Show for User? example X or O</li>
+        </ol>
+        <br>                
+        <h2>Pseudocode:</h2> 
+        <br>
+        <h4>For Game Board Design</h4>
+        <br>
+        <ul>
+            <li>Title board</li>
+            <li>Game board(3*3)</li>
+            <li>Result board to show Result(It should show on top of game board)</li>
+            <li>Button to Start game</li>           
+        </ul>       
+        <br>
+        <h4> Play Game(Javascript Part)</h4>
+        <br>
+        <ul>
+            <li>Set X and O as the first and second player</li>
+            <li>Attach onclick event to each cell </li>
+            <li>Every click write X/O on the cell based on player's turn</li>
+            <li>Once write dont let the player click again on the same cell</li>
+            <li>Check if the player won or not? check if any of the rows, column, or diagonal has 3 same values</li>
+            <li>Show the Result Board on top of the Game Board</li>
+            <li>Reset the game when the player wor or draws. Hide the result Board</li> 
+            <br>
+            
+            <h2>Javascript Demo:</h2>
+            <br>          
+            <li> <button id="play" onclick="showDemoDiv()">Play Tic-Tac-Toe</button></li>
+        </ul>
+      </div> 
+      
+      <!--Right side for  Demo-->
+      <div id="demo" class="split right">
+       
+        <div class="tic-tac-toe">   
+            <h1>Tic Tac Toe</h1> 
+            <div class="intro">
+            
+                <div class="moveStatus">
+                    <p>Player 1: X </p>
+                    <p>Player 2: O</p>
+                   
+                </div>
+            </div>
+
+            <div class="board">
+                <div class="board-row">
+                    <div class="board-cell"></div>
+                    <div class="board-cell"></div>
+                    <div class="board-cell"></div>
+                </div>
+
+                <div class="board-row">
+                    <div class="board-cell"></div>
+                    <div class="board-cell"></div>
+                    <div class="board-cell"></div>
+                </div>
+
+                <div class="board-row">
+                    <div class="board-cell"></div>
+                    <div class="board-cell"></div>
+                    <div class="board-cell"></div>
+                </div>
+                <div class="result"></div> 
+
+            </div>
+
+            <br>
+            <br>
+            <div class="turn">Player 1</div>
+                <div class="buttons">
+                    <button onclick="restartGame()" class="buttons">Reset</button>
+                    <button onclick="" class="buttons">UnDo</button>
+                </div>    
+      </div>
+      <script src="./assets/js/script.js"></script>
+    </body>
+</html>
